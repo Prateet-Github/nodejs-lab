@@ -5,11 +5,16 @@ import { UpdateStudentDto } from './dto/update-student.dto';
 
 @Controller('student')
 export class StudentController {
-  constructor(private readonly studentService: StudentService) {}
+  constructor(private readonly studentService: StudentService) { }
 
   @Post()
-  create(@Body() createStudentDto: CreateStudentDto) {
-    return this.studentService.create(createStudentDto);
+  async create(@Body() createStudentDto: CreateStudentDto) {
+    const student = await this.studentService.create(createStudentDto);
+
+    return {
+      message: 'Student created successfully',
+      data: student
+    }
   }
 
   @Get()
