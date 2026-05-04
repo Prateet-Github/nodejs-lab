@@ -9,12 +9,11 @@ import { ConfigService } from '@nestjs/config';
       useFactory: (config: ConfigService) => ({
         uri: config.get<string>('mongodb.uri'),
 
-        // 👇 CORRECT WAY
         onConnectionCreate: (connection) => {
-          Logger.log('✅ MongoDB connected', 'Database');
+          Logger.log('MongoDB connected', 'Database');
 
           connection.on('error', (err) => {
-            Logger.error('❌ MongoDB error', err, 'Database');
+            Logger.error('MongoDB error', err, 'Database');
           });
 
           return connection;
@@ -23,4 +22,4 @@ import { ConfigService } from '@nestjs/config';
     }),
   ],
 })
-export class DatabaseModule {}
+export class DatabaseModule { }
