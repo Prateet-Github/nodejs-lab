@@ -4,6 +4,7 @@ import { HealthModule } from './health/health.module';
 import { DatabaseModule } from './database/database.module';
 import { StudentModule } from './student/student.module';
 import { AuthModule } from './auth/auth.module';
+import { GradeModule } from './grade/grade.module';
 
 import configuration from './config/env.config';
 
@@ -17,6 +18,7 @@ import configuration from './config/env.config';
     DatabaseModule,
     StudentModule,
     AuthModule,
+    GradeModule,
 
   ]
 })
