@@ -6,6 +6,7 @@ import { StudentModule } from './student/student.module';
 import { AuthModule } from './auth/auth.module';
 import { GradeModule } from './grade/grade.module';
 import { BookModule } from './book/book.module';
+import { LibraryModule } from './library/library.module';
 
 import configuration from './config/env.config';
 
@@ -21,6 +22,7 @@ import configuration from './config/env.config';
     AuthModule,
     GradeModule,
     BookModule,
+    LibraryModule,
 
   ]
 })
