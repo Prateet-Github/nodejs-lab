@@ -8,6 +8,7 @@ import { GradeModule } from './grade/grade.module';
 import { BookModule } from './book/book.module';
 import { LibraryModule } from './library/library.module';
 import { CollegeModule } from './college/college.module';
+import { RedisModule } from './redis/redis.module';
 
 import configuration from './config/env.config';
 
@@ -25,6 +26,7 @@ import configuration from './config/env.config';
     BookModule,
     LibraryModule,
     CollegeModule,
+    RedisModule,
 
   ]
 })
