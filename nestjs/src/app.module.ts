@@ -9,6 +9,7 @@ import { BookModule } from './book/book.module';
 import { LibraryModule } from './library/library.module';
 import { CollegeModule } from './college/college.module';
 import { RedisModule } from './redis/redis.module';
+import { ClickhouseModule } from './clickhouse/clickhouse.module';
 
 import configuration from './config/env.config';
 
@@ -27,6 +28,7 @@ import configuration from './config/env.config';
     LibraryModule,
     CollegeModule,
     RedisModule,
+    ClickhouseModule,
 
   ]
 })
