@@ -4,6 +4,7 @@ import {createProxyMiddleware} from 'http-proxy-middleware';
 const app = express();
 const PORT = 3000;
 
+// Proxy requests to the auth service
 app.use("/auth", createProxyMiddleware({
   target: "http://localhost:3001", 
   changeOrigin: true
