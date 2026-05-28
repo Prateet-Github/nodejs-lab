@@ -11,6 +11,7 @@ import { CollegeModule } from './college/college.module';
 import { RedisModule } from './redis/redis.module';
 import { ClickhouseModule } from './clickhouse/clickhouse.module';
 import { MqModule } from './mq/mq.module';
+import { NginxModule } from './nginx/nginx.module';
 
 import configuration from './config/env.config';
 
@@ -31,6 +32,7 @@ import configuration from './config/env.config';
     RedisModule,
     ClickhouseModule,
     MqModule,
+    NginxModule,
 
   ]
 })
