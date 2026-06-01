@@ -12,6 +12,7 @@ import { RedisModule } from './redis/redis.module';
 import { ClickhouseModule } from './clickhouse/clickhouse.module';
 import { MqModule } from './mq/mq.module';
 import { NginxModule } from './nginx/nginx.module';
+import { ProxyModule } from './proxy/proxy.module';
 
 import configuration from './config/env.config';
 
@@ -33,6 +34,7 @@ import configuration from './config/env.config';
     ClickhouseModule,
     MqModule,
     NginxModule,
+    ProxyModule,
 
   ]
 })
