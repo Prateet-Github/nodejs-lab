@@ -8,7 +8,7 @@ app.get('/', (_req, res) => {
 });
 
 app.get('/events', (req, res) => {
-  res.setHeader('Content-Type', 'text/event-stream');
+  res.setHeader('Content-Type', 'text/event-stream'); // headers requires 
   res.setHeader('Cache-Control', 'no-cache');
   res.setHeader('Connection', 'keep-alive');
 
